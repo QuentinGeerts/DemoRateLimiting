@@ -7,7 +7,6 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 
-
 // Enregistre et configure le middleware de limitation de débit (rate limiting) dans le conteneur d'injection de dépendances.
 builder.Services.AddRateLimiter(options =>
 {
